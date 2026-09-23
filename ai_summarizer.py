@@ -46,7 +46,12 @@ Article:
             input=prompt,
         )
 
-        return interaction.output_text.strip()
+       response = client.models.generate_content(
+    model="gemini-2.5-flash",
+    contents=prompt,
+)
+
+return response.text.strip()
 
     except Exception as error:
         print(f"AI Summarization Error: {error}")
