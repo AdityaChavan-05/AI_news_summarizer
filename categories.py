@@ -1,4 +1,5 @@
-BRANCH_MAPPINGS = {
+BRANCH_MAPPINGS ={
+    "All": "technology OR engineering OR software OR artificial intelligence",
     "Computer Science": "computer science OR software engineering OR artificial intelligence",
     "Artificial Intelligence": "artificial intelligence OR machine learning OR generative AI",
     "Electronics": "electronics OR semiconductor OR embedded systems",
