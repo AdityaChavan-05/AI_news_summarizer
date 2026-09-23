@@ -42,7 +42,7 @@ Article:
 {article_text}"""
 
         interaction = client.interactions.create(
-            model="gemini-3.8-flash",
+            model="gemini-2.5-flash",
             input=prompt,
         )
 
