@@ -158,10 +158,8 @@ async function loadNews(category = "Artificial Intelligence") {
         🤖 AI Summary
     </div>
 
-    <div class="summary-text">
-        ${article.summary}
-    </div>
-
+    <div class="summary-text" style="white-space: pre-line;">
+    ${article.summary}
 </div>
 
                     <div class="card-footer">
