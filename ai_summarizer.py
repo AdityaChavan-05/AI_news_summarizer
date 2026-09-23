@@ -41,17 +41,12 @@ Rules:
 Article:
 {article_text}"""
 
-        interaction = client.interactions.create(
+        response = client.models.generate_content(
             model="gemini-2.5-flash",
-            input=prompt,
+            contents=prompt,
         )
 
-       response = client.models.generate_content(
-           model="gemini-2.5-flash",
-           contents=prompt,
-       )
-
-return response.text.strip()
+        return response.text.strip()
 
     except Exception as error:
         print(f"AI Summarization Error: {error}")
